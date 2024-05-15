@@ -10,7 +10,7 @@ defineProps<drinkProps>();
 </script>
 
 <template>
-
+    <button> Varukorg</button>
 </template>
 
 <style scoped>
