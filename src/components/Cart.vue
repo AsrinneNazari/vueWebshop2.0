@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import type { IOneDrink } from '@/models/IOneDrink';
+import type { ICartItem } from "@/models/ICartItem";
 
-
-interface drinkProps{
-    drink: IOneDrink[];
+interface DrinkProps {
+  cart: ICartItem[];
 }
 
-defineProps<drinkProps>();
+defineProps<DrinkProps>();
 </script>
 
 <template>
-    <button> Varukorg</button>
+  <p>{{ cart.length }}</p>
+  <button>Gå till kassan</button>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
